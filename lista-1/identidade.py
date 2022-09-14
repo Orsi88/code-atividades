@@ -1,0 +1,5 @@
+print('NOME: Júlia Martins Orsi')
+print('DATA DE NASCIMENTO: 12/04/2002')
+print('ENDEREÇO: Rua são João Del Rei Qd.110 Lt.6A')
+print('CIDADE: Goiânia-GO')
+print('CEP: 74611-005')

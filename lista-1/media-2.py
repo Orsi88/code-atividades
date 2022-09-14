@@ -1,0 +1,6 @@
+num1 = int (input('informe o primeiro número '))
+num2 = int (input('informe o segundo número '))
+soma = (num1 + num2)
+media = (soma/2)
+print('A soma dos dois números é: ', soma)
+print('A média dos dois número é: ', str(media).replace(".",","))

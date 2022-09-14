@@ -1,0 +1,10 @@
+nome = str(input('DIGITE O SEU NOME: '))
+curso = str(input('DIGITE O SEU CURSO: '))
+matricula = str(input('DIGITE O SEU R.A: '))
+idade = int(input('DIGITE A SUA IDADE: '))
+
+print('{} tem {}, cursa {} e seu R.A é {}.'.format(nome, idade, curso, matricula))
+print('A variável "nome" está no endereço', hex(id(nome)))
+print('A variável "curso" está no endereço', hex(id(curso)))
+print('A variável "matricula" está no endereço', hex(id(matricula)))
+print('A variável "idade" está no endereço', hex(id(idade)))
