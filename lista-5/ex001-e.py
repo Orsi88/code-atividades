@@ -1,3 +1,9 @@
+#1. Pelo menos 1 letra entre [a-z]
+#2. Pelo menos 1 número entre [0-9]
+#3. Pelo menos 1 letra maiúscula [A-Z] 
+#4. Número mínimo de caracteres: 6
+#5. Número máximo de caracteres: 12
+
 def validacao_senha():
 
     # Coletando info
@@ -11,15 +17,17 @@ def validacao_senha():
 
     # Processo de Validação de Senha
     
-    n = len(partesSenha)
+    numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-    if n > 12 and n < 6:
-       print('ERRO! Sua senha deve ter entre 6 e 12 caracteres!')
+    numeroCaracteres = len(partesSenha)
+
+    if numeroCaracteres > 12 and numeroCaracteres < 6:
+       res = print('ERRO! Sua senha deve ter entre 6 e 12 caracteres!')
+    elif any(numeros in ):
+
     else:
-        print('SUa senha foi cadastrada com sucesso!')
-    
-    
+       res = print('Sua senha foi cadastrada com sucesso!')
 
-    return
+    return res
 
 validacao_senha()
