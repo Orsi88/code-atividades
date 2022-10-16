@@ -4,6 +4,9 @@
 #4. Número mínimo de caracteres: 6
 #5. Número máximo de caracteres: 12
 
+from tokenize import Number
+
+
 def validacao_senha():
 
     # Coletando info
@@ -18,15 +21,14 @@ def validacao_senha():
     # Processo de Validação de Senha
     
     numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-
     numeroCaracteres = len(partesSenha)
 
     if numeroCaracteres > 12 and numeroCaracteres < 6:
-       res = print('ERRO! Sua senha deve ter entre 6 e 12 caracteres!')
-    elif any(numeros in ):
-
+      res = print('ERRO! Sua senha deve ter entre 6 e 12 caracteres!')
+    elif any([x == Number for x in numeros]):
+      res = print('ERRO! Sua senha deve ter pelo menos um número!')
     else:
-       res = print('Sua senha foi cadastrada com sucesso!')
+      res = print('Sua senha foi cadastrada com sucesso!')
 
     return res
 
