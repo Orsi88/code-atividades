@@ -25,8 +25,9 @@ def validacao_senha():
 
     if numeroCaracteres > 12 and numeroCaracteres < 6:
       res = print('ERRO! Sua senha deve ter entre 6 e 12 caracteres!')
-    elif any([x == Number for x in numeros]):
-      res = print('ERRO! Sua senha deve ter pelo menos um número!')
+    # Tem que ter uma forma de ler a senha e identificar separado tipo index, index é uma possibilidade assim como any
+    #elif any([x == Number for x in numeros]):
+      #res = print('ERRO! Sua senha deve ter pelo menos um número!')
     else:
       res = print('Sua senha foi cadastrada com sucesso!')
 
