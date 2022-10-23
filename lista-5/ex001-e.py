@@ -24,13 +24,27 @@ def validacao_senha():
     numeroCaracteres = len(partesSenha)
 
     if numeroCaracteres > 12 and numeroCaracteres < 6:
-      res = print('ERRO! Sua senha deve ter entre 6 e 12 caracteres!')
-    # Tem que ter uma forma de ler a senha e identificar separado tipo index, index é uma possibilidade assim como any
-    #elif any([x == Number for x in numeros]):
-      #res = print('ERRO! Sua senha deve ter pelo menos um número!')
+      res = print('ERRO! Sua senha deve ter entre 6 e 12 caracteres.')
+    elif not any(x.isupper() for x in partesSenha):
+      res = print('ERRO! Deve conter pelo menos uma letra maiúscula.')
+    elif not any(x.islower() for x in partesSenha):
+      res = print('ERRO! Deve conter pelo menos uma letra minúscula.')
+    elif all(x.isdigit() == False for x in partesSenha):
+      res = print('ERRO! Deve conter pelo menos um número.')
     else:
       res = print('Sua senha foi cadastrada com sucesso!')
-
     return res
 
+
 validacao_senha()
+while True:
+  escolha = input('Tentar novamente [S/N] ou continuar [A]? ').upper()
+  if escolha == 'S':
+    validacao_senha()
+  if escolha == 'A':
+    print('Processando...')
+    break
+  if escolha == 'N':
+    print('Saindo...')
+    break
+  
