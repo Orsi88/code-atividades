@@ -14,7 +14,7 @@ def calculando_base16():
         res = 16*4
     elif escolha == '4':
         res = 16*5
-    return print(O resultado é )
+    return print('O resultado é {}'.format(res))
 
 calculando_base16()
     
