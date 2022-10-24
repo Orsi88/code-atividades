@@ -3,7 +3,7 @@
 ano = 2019
 nome = ''
 aniversario = [2099]
-escolha = '0'
+escolha = '0001'
 deMenor = []
 criseDos30 = []
 criseMeiaIdade = []
@@ -12,19 +12,25 @@ naFlorDaIdade = []
 def recebendo_info():
     nome = str(input('Qual o seu nome? '))
     aniversario = int(input('Em que ano você nasceu? '))
-    escolha = str(input('Deseja realizar outro cadastro [0000] - para sair e [0001] - para ficar: '))
-    return nome, aniversario, escolha
+    return nome, aniversario
 
 def manipulando_info():
+    for escolha in range (escolha != '0000'):
+        recebendo_info()
 
-    if 2019 - aniversario < 18:
-        deMenor.append(nome)
-    elif 2019 - aniversario <= 30:
-        criseDos30.append(nome)
-    elif 2019 - aniversario < 50:
-        criseMeiaIdade.append(nome)
-    elif 2019 - aniversario < 80:
-        naFlorDaIdade.append(nome) 
+        if 2019 - aniversario < 18:
+            deMenor.append(nome)
+        elif 2019 - aniversario <= 30:
+            criseDos30.append(nome)
+        elif 2019 - aniversario < 50:
+            criseMeiaIdade.append(nome)
+        elif 2019 - aniversario < 80:
+            naFlorDaIdade.append(nome) 
 
-recebendo_info()
+        escolha = str(input('Deseja realizar outro cadastro [0001] - Sim [0000] - Não: '))
+        
+        return print(deMenor), print(criseDos30), print(criseMeiaIdade), print(naFlorDaIdade)
+
+        
+
 manipulando_info()
