@@ -1,21 +1,29 @@
 #Faça um programa, usando funções que mostre, dentro de 4 funções com senha de administrador, separadas, se a senha digitada pelo usuário é válida ou não.
-
+status = ['ok', 'ok', 'ok', 'ok']
 def etapa_1():
-    if numeroCaracteres > 12 and numeroCaracteres < 6:
-        return print('SENHA INVÁLIDA! Sua senha deve ter entre 6 e 12 caracteres.')
+    if numeroCaracteres < 6:
+        status.append('negado')
+        status.remove('ok')
+        return print('SENHA INVÁLIDA! Sua senha deve ter mais que 6 caracteres.'), status
      
 def etapa_2():
     if not any(x.isupper() for x in partesSenha):
-        return print('SENHA INVÁLIDA! Deve conter pelo menos uma letra maiúscula.')
+        status.append('negado')
+        status.remove('ok')
+        return print('SENHA INVÁLIDA! Deve conter pelo menos uma letra maiúscula.'), status
 
 def etapa_3():
     if not any(x.islower() for x in partesSenha):
-        return print('SENHA INVÁLIDA! Deve conter pelo menos uma letra minúscula.')
+        status.append('negado')
+        status.remove('ok')
+        return print('SENHA INVÁLIDA! Deve conter pelo menos uma letra minúscula.'), status
      
 
 def etapa_4(): 
     if all(x.isdigit() == False for x in partesSenha):
-        return print('SENHA INVÁLIDA! Deve conter pelo menos um número.')
+        status.append('negado')
+        status.remove('ok')
+        return print('SENHA INVÁLIDA! Deve conter pelo menos um número.'), status
      
 
 # Recebendo info
@@ -36,6 +44,7 @@ etapa_1()
 etapa_2()
 etapa_3()
 etapa_4()
-
+if status == ['ok', 'ok', 'ok', 'ok']:
+    print('SENHA VÁLIDA! Sua senha foi cadastrada com sucesso.')
     
    
