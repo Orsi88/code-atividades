@@ -1,36 +1,34 @@
 #Faça um programa com a variável global ano = 2019. Crie funções que calcule a idade de várias pessoas, enquanto não digitar 0000 para finalizar o programa. Uma função será para mostrar a idade menor que 18 anos; a segunda, para mostrar a idade menor ou igual a 30 anos; a terceira para mostrar a idade menor que 50 anos; a quarta para mostrar a idade menor que 80 anos.
 
-ano = 2019
-nome = ''
-aniversario = [2099]
-escolha = '0001'
-deMenor = []
-criseDos30 = []
-criseMeiaIdade = []
-naFlorDaIdade = []
+anoAtual =2019
+faixa1 = []
+faixa2 = []
+faixa3 = []
+faixa4 = []
 
-def recebendo_info():
-    nome = str(input('Qual o seu nome? '))
-    aniversario = int(input('Em que ano você nasceu? '))
-    return nome, aniversario
+def recolhendo_dados():
+    nome = str(input('Qual o seu nome?'))
+    anoNascimento = int(input('Em que ano você nasceu? '))
 
-def manipulando_info():
-    for escolha in range (escolha != '0000'):
-        recebendo_info()
+    if 2019 - anoNascimento < 18:
+        faixa1.append(nome)
+        print('Você é de menor!')
+    elif 2019 - anoNascimento <= 30:
+        faixa2.append(nome)
+        print('Você esta na crise dos 30 ?!! kkkk')
+    elif 2019 - anoNascimento < 50:
+        faixa3.append(nome)
+        print('Você esta na crise da meia idade! :)')
+    elif 2019 - anoNascimento < 80:
+        faixa4.append(nome)
+        print('Você esta na flor da idade! S2')
 
-        if 2019 - aniversario < 18:
-            deMenor.append(nome)
-        elif 2019 - aniversario <= 30:
-            criseDos30.append(nome)
-        elif 2019 - aniversario < 50:
-            criseMeiaIdade.append(nome)
-        elif 2019 - aniversario < 80:
-            naFlorDaIdade.append(nome) 
+while
 
-        escolha = str(input('Deseja realizar outro cadastro [0001] - Sim [0000] - Não: '))
-        
-        return print(deMenor), print(criseDos30), print(criseMeiaIdade), print(naFlorDaIdade)
-
-        
-
-manipulando_info()
+print('-=-'*15)
+print('ANALISE...')
+print('{} menor de 18 anos'.format(faixa1))
+print('{} tem 30 anos ou menos'.format(faixa2))
+print('{} tem menos de 50 anos'.format(faixa3))
+print('{} tem menos de 80 anos'.format(faixa4))
+print('-=-'*15)
