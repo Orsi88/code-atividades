@@ -1,0 +1,1 @@
+#Crie um gráfico de função linear com o intervalo de 0 a 4 para o eixo x.

@@ -1,0 +1,1 @@
+#Imporando a classe numpy, demonstre as tês formas possíveis de se criar um array, apartir de uma lista, desenvolvendo um programa que multiplique a idade e 5 pessoas por 3.

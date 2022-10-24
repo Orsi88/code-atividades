@@ -1,0 +1,1 @@
+#Crie um dicionário com 6 nomes de pessoas e 6 CPF e imprima na tela.

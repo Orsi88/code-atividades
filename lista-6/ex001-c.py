@@ -1,0 +1,1 @@
+#Faça um programa com a variável global ano = 2019. Crie funções que calcule a idade de várias pessoas, enquanto não digitar 0000 para finalizar o programa. Uma função será para mostrar a idade menor que 18 anos; a segunda, para mostrar a idade menor ou igual a 30 anos; a terceira para mostrar a idade menor que 50 anos; a quarta para mostrar a idade menor que 80 anos.

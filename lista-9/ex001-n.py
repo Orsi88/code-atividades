@@ -1,0 +1,1 @@
+#Crie um gráfico de dispersão com o intervalo de 0 a 4 para o eixo x e no eixo y, com 0.2 de intervalo nos dois eixos.

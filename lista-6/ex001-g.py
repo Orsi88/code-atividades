@@ -1,0 +1,1 @@
+#Faça um programa, usando funções que mostre, dentro de 4 funções com senha de administrador, separadas, se a senha digitada pelo usuário é válida ou não.

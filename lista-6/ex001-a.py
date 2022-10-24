@@ -1,3 +1,5 @@
+#Crie várias funções que calcule o dobro, triplo, quádruplo e quíntuplo do número 16. Crie uma função que mostre os resultados obtidos nos cálculos.
+
 def calculando_base16():
     print('Manipulando o Número 16')
     print('[1] Dobrar')

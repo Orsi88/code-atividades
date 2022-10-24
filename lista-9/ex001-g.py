@@ -1,0 +1,1 @@
+#Crie um gráfico com o faturamento de vendas de uma loja dos últimos meses deste ano.

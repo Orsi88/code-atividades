@@ -1,0 +1,1 @@
+#Remova um cadastro de sua lista.
