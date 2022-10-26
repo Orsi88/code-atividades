@@ -5,15 +5,10 @@
 
 #i) Sua União;
 
-x = ('a', 'b', 'c', 'd', 'e')
-y = ('d', 'e', 'f', 'g')
 
-t = x+y
-
-print(t)
 
 #ii) Sua interseção;
-intersecao = []
+
 
 
 #iii) Uma alteração usando “update”;
