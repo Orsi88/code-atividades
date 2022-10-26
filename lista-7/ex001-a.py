@@ -9,21 +9,32 @@ separando = lista.extend(texto)
 print(len(lista))
 
 
-# 2. Construa uma classe em Python que peça ao usuário para digitar um texto em letras maiúsculas e mostre o  texto  em  letra  minúscula,  em  seguida  solicite-o  um  texto  em  letra  minúscula  e  mostre-o  em  letra maiúsculas. (Utilize os métodos toLowerCase() e toUpperCase())
+# 2. Construa uma classe em Python que peça ao usuário para digitar um texto em letras maiúsculas e mostre o  texto  em  letra  minúscula,  em  seguida  solicite-o  um  texto  em  letra  minúscula  e  mostre-o  em  letra  ele desviou maiúsculas. (Utilize os métodos toLowerCase() e toUpperCase())
+
 print('Questão 02')
 
 texto = str(input('Digite uma frase [em letras minúsculas]: ')).upper()
 print(texto)
 
-texto2 = str(input('Digite uma frase [em letras maiúsculas]: ')).lower()
-print(texto2)
+texto8 = str(input('Digite uma frase [em letras maiúsculas]: ')).lower()
+print(texto)
+
+
+
+
+
 # 3. Construa  uma  classe  que  solicite  uma  frase  escrita  pelo  usuário.  Peça  ao  usuário  para  escolheruma palavra da frase escrita e substituí-la por outra palavra
 
 print('Questão 03')
 
+texto = str(input('Digite uma frase: '))
 
+palavraEscolhida = str(input('Palavra que deseja substituir:  '))
+palavrNova = 
 
 # 4. Construa  uma  classe  que  solicite  uma  frase  escrita  pelo  usuário.  Peça  ao  usuário  para  escolheruma palavra da frase escrita e retornar um índice referente à posição da palavra
+
+
 
 print('Questão 04')
 
