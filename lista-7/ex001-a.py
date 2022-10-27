@@ -35,9 +35,8 @@ palavraEscolhida = str(input('Palavra que deseja retirar:  '))
 
 for palavraEscolhida in texto(0, 2):
     
-
-palavraNova = str(input('Palavra que deseja adicionar:  '))
-
+    palavraNova = str(input('Palavra que deseja adicionar:  '))
+    
 
 
 # 4. Construa  uma  classe  que  solicite  uma  frase  escrita  pelo  usuário.  Peça  ao  usuário  para  escolheruma palavra da frase escrita e retornar um índice referente à posição da palavra
