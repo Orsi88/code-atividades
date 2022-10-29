@@ -56,8 +56,25 @@ print(listaTexto)
 
 print('Questão 06')
 
-x = input('Digite uma frase: ')
-y = 
+# Entrada
+
+texto = input('Digite uma frase: ')
+cont = len(texto)
+
+sequencia = []
+sequencia.extend(texto)
+
+# Processsamento
+for x in range:
+
+    for sequencia[x] in texto (0, cont):
+        combina = print('{} + {}'.format(sequencia[x], cont))
+
+
+# Saída
+
+
+
 
 # 7. Data  por  extenso.  Faça  um  programa  que  solicite  a  data  de  nascimento  (dd/mm/aaaa)  do  usuário  e imprima a data com o nome do mês por extenso.
 
