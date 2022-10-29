@@ -25,20 +25,20 @@
 
 # 3. Construa  uma  classe  que  solicite  uma  frase  escrita  pelo  usuário.  Peça  ao  usuário  para  escolheruma palavra da frase escrita e substituí-la por outra palavra
 
-print('Questão 03')
+#print('Questão 03')
 
-texto = str(input('Digite uma frase: '))
-listaTexto = texto.split()
-print(listaTexto)
+#texto = str(input('Digite uma frase: '))
+#listaTexto = texto.split()
+#print(listaTexto)
 
-palavraExcluida = str(input('Palavra para excluir: '))
-palavraNova = str(input('Nova palavra: '))
-posicaoElemento = listaTexto.index(palavraExcluida)
+#palavraExcluida = str(input('Palavra para excluir: '))
+#palavraNova = str(input('Nova palavra: '))
+#posicaoElemento = listaTexto.index(palavraExcluida)
 
-listaTexto.pop(posicaoElemento)
-listaTexto.insert(posicaoElemento, palavraNova)
+#listaTexto.pop(posicaoElemento)
+#listaTexto.insert(posicaoElemento, palavraNova)
 
-print(listaTexto)
+#print(listaTexto)
 
 
 
@@ -59,16 +59,22 @@ print('Questão 06')
 # Entrada
 
 texto = input('Digite uma frase: ')
-cont = len(texto)
+cont = len(texto) #voltar quantidade
 
 sequencia = []
-sequencia.extend(texto)
+sequencia.extend(texto) #formar lista da frase
+
+x = sequencia[0]
+
+achado = []
+combina = []
 
 # Processsamento
-for x in range:
-
-    for sequencia[x] in texto (0, cont):
-        combina = print('{} + {}'.format(sequencia[x], cont))
+for x in sequencia:
+    for sequencia[x] in texto(0, cont):
+        if sequencia[x] == achado[cont]:
+            combina[cont] = achado
+            print (combina)
 
 
 # Saída
